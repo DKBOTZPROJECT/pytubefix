@@ -420,7 +420,8 @@ print(_token_file)
 def _default_oauth_verifier(verification_url: str, user_code: str):
     """ Default `print(...)` and `input(...)` for oauth verification """
     print(f'Please open {verification_url} and input code {user_code}')
-    input('Press enter when you have completed this step.')
+    time.sleep(90)
+    print('Waiting 90 sec for auth')
 
 
 def _default_po_token_verifier() -> Tuple[str, str]:
