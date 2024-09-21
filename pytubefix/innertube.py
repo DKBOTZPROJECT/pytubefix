@@ -413,6 +413,8 @@ _default_clients = {
 _token_timeout = 1800
 _cache_dir = pathlib.Path(__file__).parent.resolve() / '__cache__'
 _token_file = os.path.join(_cache_dir, 'tokens.json')
+print(_cache_dir)
+print(_token_file)
 
 
 def _default_oauth_verifier(verification_url: str, user_code: str):
